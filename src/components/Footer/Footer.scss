@@ -1,0 +1,136 @@
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+.content {
+  height: 70vh;
+}
+
+.footer-14398 {
+  padding: 50px 0 0;
+  background: url('../../img/photo_2020-08-13_012\ 1.png') center no-repeat;
+  background-size: cover;
+  color: #777;
+  position: relative;
+  height: 180px;
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    content: '';
+    background-color: rgba(68, 68, 68, 0.437);
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 520px) {
+    padding-top: 20px;
+  height: 190px;
+  }
+  .container {
+    max-width: 1600px;
+    padding: 0 30px;
+    margin: 0 auto;
+    .footer_content {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      z-index: 1;
+      .footer_img_link {
+        .footer_img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+      .footer_content_social {
+        display: flex;
+        margin-left: 80px;
+        .social_tg {
+          display: block;
+          background: url('../../img/icons8-телеграм-50.png') center no-repeat;
+          background-size: cover;
+          width: 65px;
+          height: 65px;
+          margin-right: 15px;
+        }
+        .social_wa {
+          display: block;
+          background: url('../../img/icons8-whatsapp.svg') center no-repeat;
+          background-size: cover;
+          width: 65px;
+          height: 65px;
+        }
+      }
+      .footer_content_contacts {
+        display: flex;
+        flex-direction: column;
+        .content_contacts_title {
+          font-size: 25px;
+          font-weight: 600;
+          color: #fff;
+        }
+        .content_contacts_wrapp {
+          display: flex;
+          flex-direction: column;
+          .content_contacts_phone,
+          .content_contacts_mail {
+            color: #fff;
+            font-weight: 500;
+            text-decoration: underline !important;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+  .footer_politika {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+.footer_content_social {
+  @media (max-width: 670px) {
+    display: none !important;
+  }
+}
+
+.footer_content_social_contact {
+  display: none !important;
+  .social_tgc {
+    display: block;
+    background: url('../../img/icons8-телеграм-50.png') center no-repeat;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    margin-right: 15px;
+  }
+  .social_wac {
+    display: block;
+    background: url('../../img/icons8-whatsapp.svg') center no-repeat;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.footer_content_social_contact {
+  @media (max-width: 670px) {
+    display: flex !important;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+}

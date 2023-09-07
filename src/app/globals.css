@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.map {
+  width: 700px;
+  height: 500px;
+  user-select: none;
+  transform: translate3d(0px, 0px, 0px) scale(1, 1);
+  cursor: url(https://api-maps.yandex.ru/2.0/./images/ef50ac9….cur) 16 16,
+    url(https://api-maps.yandex.ru/2.0/./images/ef50ac9….cur), move;
+}
+
+@media only screen and (max-width: 943px) {
+  .map {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 686px) {
+  .map {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .map {
+    width: 350px;
+    height: 350px;
+  }
+}

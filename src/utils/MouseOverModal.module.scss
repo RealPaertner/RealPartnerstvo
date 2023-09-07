@@ -1,0 +1,45 @@
+.header_low_item {
+  position: relative;
+  .low_item_btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+    padding: 12px 5px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    cursor: pointer;
+    color: #5d5d5d;
+    @media (max-width: 1024px) {
+      font-size: 13px;
+    }
+    @media (max-width: 900px) {
+      font-size: 12px;
+    }
+    @media (max-width: 390px) {
+      font-size: 10px;
+    }
+    .low_item_heading {
+      padding: 4px 6px 4px 11px;
+      font-size: 15px;
+      line-height: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .low_item_icon {
+      display: block;
+      background: url('../img/arrowuPP.svg') center no-repeat;
+      background-size: cover;
+      width: 12px;
+      height: 12px;
+      transform: rotate(180deg);
+      @media (max-width: 390px) {
+        width: 9px;
+        height: 9px;
+      }
+    }
+  }
+}

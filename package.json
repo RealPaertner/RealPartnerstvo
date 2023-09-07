@@ -1,0 +1,29 @@
+{
+  "name": "real-partners",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev-t": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@pbe/react-yandex-maps": "^1.2.4",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.13",
+    "next": "13.4.13",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-slick": "^0.29.0",
+    "react-swift-slider": "^7.2.0",
+    "react-yandex-maps": "^4.6.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2"
+  }
+}

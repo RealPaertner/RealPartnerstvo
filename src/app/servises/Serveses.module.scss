@@ -1,0 +1,273 @@
+.servises_slide {
+  .servises_slide_wrap {
+    position: relative;
+    background: url('../../img/photo_1494514045_2234.jpg') center no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 700px) {
+      height: 350px;
+    }
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #0003;
+      width: 100%;
+      height: 100%;
+    }
+    .slide_wrap_desc {
+      position: relative;
+      top: 25%;
+      color: #fff;
+      left: 2%;
+      text-align: center;
+      max-width: 800px;
+      font-size: 44px;
+      font-weight: 300;
+      a {
+        color: #00a3ff;
+      }
+      @media (max-width: 1050px) {
+        left: -15%;
+      }
+      @media (max-width: 850px) {
+        left: -21%;
+        font-size: 33px;
+      }
+      @media (max-width: 700px) {
+        left: -18%;
+      }
+      @media (max-width: 500px) {
+        font-size: 25px;
+        left: -15%;
+      }
+    }
+    .slide_wrap_title {
+      position: relative;
+      top: 37%;
+      color: #fff;
+      left: 30%;
+      text-align: center;
+      width: 800px;
+      font-size: 44px;
+      @media (max-width: 1050px) {
+        left: 10%;
+      }
+      @media (max-width: 850px) {
+        left: 20%;
+        font-size: 33px;
+        width: 500px;
+      }
+      @media (max-width: 700px) {
+        left: 20%;
+        font-size: 33px;
+        width: 350px;
+      }
+      @media (max-width: 500px) {
+        top: 40%;
+        left: 20%;
+        font-size: 28px;
+        width: 250px;
+      }
+    }
+  }
+}
+
+.section_servises {
+  .servises_wrapp {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    background: #eeeef0;
+    grid-auto-flow: row;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 100px;
+      padding-top: 120px;
+    }
+    .site-main section:not(:last-of-type):not(#cover):not(#reviews) {
+      padding-bottom: 72px;
+      padding-top: 72px;
+    }
+    .servises_container {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      max-width: 100%;
+      padding: 0 30px;
+      width: 100%;
+      @media screen and (min-width: 1440px) {
+        max-width: 1410px;
+      }
+      .servises_title {
+        text-transform: uppercase;
+        color: #1a1a1a;
+        display: block;
+        font-size: 32px;
+        margin: 0 0 32px;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid #d8d7db;
+        padding-bottom: 44px;
+        @media screen and (min-width: 1200px) {
+          font-size: 52px;
+          margin: 0 0 52px;
+        }
+        @media screen and (min-width: 576px) {
+          font-size: 40px;
+          text-align: left;
+        }
+        @media (max-width: 767px) {
+          margin-top: 20px;
+          font-size: 26px;
+        }
+      }
+      .servises_wrapps {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: grid;
+        grid-auto-flow: row;
+        gap: 31px;
+        @media screen and (min-width: 768px) {
+          grid-template-columns: repeat(2, calc(50% - 15.5px));
+        }
+        @media (max-width: 767px) {
+          gap: 0;
+          margin-bottom: 32px;
+        }
+        .servises_wrapp_animated {
+          .d_n {
+            display: none;
+          }
+          .servises_photo {
+            cursor: pointer;
+            max-height: 400px;
+            position: relative;
+            @media screen and (min-width: 768px) {
+              justify-self: flex-end;
+            }
+            @media screen and (min-width: 768px) {
+              display: block;
+            }
+            .photo_img {
+              width: 660px;
+              height: 322px;
+              border-radius: 15px;
+              @media (max-width: 1400px) {
+                width: 450px;
+                height: 280px;
+              }
+              @media (max-width: 960px) {
+                max-width: 350px;
+              }
+            }
+          }
+        }
+        .servises_wrapp_animated {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .servises_wrapp_servises_desc {
+            .servises_wrapp_servises {
+              color: #1a1a1a;
+              font-size: 24px;
+              font-weight: 700;
+              margin: 0;
+            }
+            .servises_servises_desc {
+              color: #818181;
+              font-size: 17px;
+              line-height: 150%;
+              // text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .serviseslist_wrapp {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    background: #ffffff;
+    grid-auto-flow: row;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 120px;
+      padding-top: 100px;
+    }
+    .site-main section:not(:last-of-type):not(#cover):not(#reviews) {
+      padding-bottom: 72px;
+      padding-top: 72px;
+    }
+    .serviseslist_container {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      max-width: 100%;
+      padding: 0 30px;
+      width: 100%;
+      @media screen and (min-width: 1440px) {
+        max-width: 1410px;
+      }
+      @media (max-width: 767px) {
+        margin-top: 30px;
+      }
+      .serviseslist_title {
+        text-transform: uppercase;
+        color: #1a1a1a;
+        display: block;
+        font-size: 32px;
+        margin: 0 0 32px;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid #d8d7db;
+        padding-bottom: 52px;
+        @media screen and (min-width: 1200px) {
+          font-size: 52px;
+          margin: 0 0 52px;
+        }
+        @media screen and (min-width: 576px) {
+          font-size: 40px;
+          text-align: left;
+        }
+      }
+      .serviseslist_list {
+        display: flex;
+        flex-direction: column;
+        .serviseslist_item {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #d8d7db;
+          padding-bottom: 46px;
+          margin: 0 0 32px;
+          @media screen and (min-width: 1200px) {
+            margin: 0 0 52px;
+          }
+          @media (max-width: 930px) {
+            flex-direction: column;
+            gap: 10px;
+          }
+          .serviseslist_item_title {
+            display: flex;
+            .serviseslist_item_number {
+              color: #818181;
+              font-size: 17px;
+            }
+            .serviseslist_item_name {
+              font-size: 52px;
+              color: #00a3ff;
+              max-width: 225px;
+            }
+          }
+          .serviseslist_item_desc {
+            color: #1a1a1a;
+            max-width: 450px;
+          }
+        }
+      }
+    }
+  }
+}
