@@ -6,7 +6,7 @@ import "./Blocks.scss"
 const Blocks = () => {
 
   const [text, Setext] = React.useState([
-    { text1: "13", span: "ООООООЧ МНогомлн человек", text2: "Крупнейший город в Европе" },
+    { text1: "13", span: "млн человек", text2: "Крупнейший город в Европе" },
     { text1: "ТОП-3", text2: "Один из крупнейших потребительских рынков в Европе" }
   ])
   const [text2, Setext2] = React.useState([
