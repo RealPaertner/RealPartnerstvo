@@ -9,7 +9,7 @@
   max-width: 1660px;
   padding: 0 30px;
   margin: 0 auto;
-  @media (max-width: 940px) {
+  @media (max-width: 945px) {
     max-width: 750px;
     padding: 0px 10px;
     margin: 0 auto;
@@ -21,10 +21,10 @@
     max-width: 400px;
   }
   @media (max-width: 460px) {
-    max-width: 315px;
+    max-width: 330px;
   }
   @media (max-width: 380px) {
-    max-width: 245px;
+    max-width: 310px;
   }
 }
 nav ul {
@@ -164,6 +164,10 @@ li {
     @media (max-width: 620px) {
       margin-left: -10px;
     }
+    @media (max-width:1180px) {
+     width: 40px;
+     height: 40px;
+    }
   }
 }
 
@@ -292,7 +296,7 @@ li {
     color: #0e2431;
     font-weight: 500;
     font-size: 1.2rem;
-    padding: 0.7rem;
+    // padding: 0.7rem;
   }
 
   .navbar .nav-container a:hover {
@@ -312,6 +316,10 @@ li {
     font-size: 1.2rem;
     color: #0e2431;
 
+    @media (max-width:1180px) {
+     top: 12px;
+     left: 8px;
+    }
     & .Logo {
       display: block;
       // width: 160px;
@@ -330,18 +338,26 @@ li {
 
   .telo {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 10px;
-    top: 50px;
+    left: -200%;
+    top: -2px;
+    z-index: 10;
+    padding-top: 10px;
+    transition: left 1s;
     @media (max-width: 400px) {
-    top: 70px;
+      top: 70px;
       flex-direction: column;
       .telHeader {
         line-height: 0;
       }
     }
+  }
+  
+  .telo_active {
+    left: -38px;
   }
 
   .menu-items {
@@ -363,6 +379,7 @@ li {
     & li {
       text-align: center;
       margin-left: -100px;
+      display: block !important;
     }
   }
 
@@ -400,4 +417,8 @@ li {
 .w55 {
   @media (max-width:1180px) {
   max-width: 80px;
-}}
+}
+@media (max-width: 950px) {
+  display: none;  
+}
+}

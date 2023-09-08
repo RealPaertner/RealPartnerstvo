@@ -97,6 +97,10 @@
         letter-spacing: 0.5px;
         margin-top: 9px;
       }
+      @media (max-width: 767px) {
+        margin-right: 0;
+        line-height: 24px;
+      }
     }
     .collab_subscribe__form {
       float: left;

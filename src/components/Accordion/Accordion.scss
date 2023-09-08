@@ -13,19 +13,19 @@ $cLightGray: rgba(#000, 0.1);
   width: 80%;
   margin: 335px auto 70px;
   @media (max-width: 1475px) {
-      gap: 20px;
+    gap: 20px;
   }
   @media (max-width: 500px) {
-      gap: 0;
+    gap: 0;
   }
   @media (max-width: 470px) {
     gap: 70px;
     padding-top: 0;
-}
-@media (max-width: 400px) {
-  font-size: 30px;
-  margin: 90px auto 70px;
-}
+  }
+  @media (max-width: 400px) {
+    font-size: 30px;
+    margin: 15px auto 70px;
+  }
 }
 
 .accordion-list {
@@ -71,42 +71,8 @@ $cLightGray: rgba(#000, 0.1);
     margin-top: 5px;
     @media (max-width: 560px) {
       font-size: 30px;
+    }
   }
-  }
-  // & .button1, .button2 {
-  //     font-size: 14px;
-  // border: 1px solid #012DE7;
-  // border-radius: 10px;
-  // padding: 10px 20px 10px;
-  //     text-decoration: none;
-  //     width: 25%;
-  //     margin-bottom: 50px;
-  //     text-align: center;
-  //     background: #4800e8;
-  //     color: #fff;
-  //     margin-top: 30px;
-  //     font-weight: 500;
-  // }
-  // & .button2{
-  //     border: 2px solid #4800e8;
-  //     background: transparent;
-  //     color:#4800e8;
-  // }
-  // & .button3 {
-  //     background: rgba(1, 45, 231, 0.05);
-  // border-radius: 6px;
-  // color: #012DE7;
-  // padding: 20px 43px;
-  // font-size: 14px;
-  // transition: 0.25s;
-  // max-width: 52%;
-  // border: 0;
-  // cursor: pointer;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // gap: 10px;
-  // }
 }
 
 .accordion-item {
@@ -207,6 +173,13 @@ $cLightGray: rgba(#000, 0.1);
       font-size: 25px;
       text-align: center;
       margin-bottom: -100px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .text {
+    h3 {
+    font-size: 24px;
     }
   }
 }

@@ -40,9 +40,9 @@ const Section1 = () => {
               <p className={s.block1p}>
                 Управление и продажа коммерческой недвижимости
               </p>
-              <a href="#projects" className={s.button}>
+              {/* <a href="#projects" className={s.button}>
                 Стать инвестором
-              </a>
+              </a> */}
             </div>
           </div>
 

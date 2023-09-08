@@ -20,7 +20,7 @@ export const HeaderServise = ({ data, setModal }) => {
                   onClick={onClickListItem}
                   rel=""
                   className={s.menu_category__list_link}
-                  href="/collectionschapter"
+                  href="/servises"
                 >
                   <span className={s.menu_category__link_text}>{title}</span>
                   {description.map((desc, j) => (

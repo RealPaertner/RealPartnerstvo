@@ -28,7 +28,7 @@ export const ContactPage = () => {
             <div className={s.connection_mail}>
               <div className={s.connection_mail_client}>
                 <a href="mailto:realpartnerstvo@mail.ru" className={s.mail_client_telink}>
-                  info@moi-brend.ru
+                realpartnerstvo@mail.ru
                 </a>
                 <span className={s.mail_client_tedesc}> - для клиентов и сотрудничества</span>
               </div>

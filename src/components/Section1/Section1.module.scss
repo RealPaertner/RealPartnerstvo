@@ -27,6 +27,10 @@
     height: 235px;
     margin-left: -50px;
     margin-top: -20px;
+    @media(max-width: 435px) {
+      width: 130%;
+      height: 100%;
+    }
   }
 }
 .side1 p {

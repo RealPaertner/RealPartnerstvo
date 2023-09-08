@@ -53,24 +53,11 @@ const Header = () => {
                   </div>
                 </div>
                 <div className="box">
-                  <div
+                  <ul
                     className={
                       nav ? ["menu-items", "active"].join(' ') : ["menu-items"]
                     }
                   >
-                    <div className="telo">
-                      <a className="telHeader" href="tel:+79959901514">
-                        +7 995 990 15 14
-                      </a>
-                      <div className='icons'>
-                        <a href="https://t.me/RPMSKRP" target="_blank">
-                          <Image src={tg} alt="" className='bx bxl_telegram' />
-                        </a>
-                        <a href="https://wa.me/79959901514?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..." target="_blank">
-                          <Image src={wa} alt="" className='bx bxl_whatsapp' />
-                        </a>
-                      </div>
-                    </div>
                     <li><Link onClick={() => setNav(false)} href="/about-us">О компании</Link></li>
                     {/* <li>
                       <Dropdown />
@@ -81,6 +68,21 @@ const Header = () => {
                     </li>
                     <li><Link onClick={() => setNav(false)} href="/contact-page">Контакты</Link></li>
                     <li><Link onClick={() => setNav(false)} href="/partners">Партнёрам</Link></li>
+                  </ul>
+                  <div className={
+                      nav ? ["telo", "telo_active"].join(' ') : ["telo"]
+                  }>
+                    <a className="telHeader" href="tel:+79959901514">
+                      +7(995)990-15-14
+                    </a>
+                    <div className='icons'>
+                      <a href="https://t.me/RPMSKRP" target="_blank">
+                        <Image src={tg} alt="" className='bx bxl_telegram' />
+                      </a>
+                      <a href="https://wa.me/79959901514?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82..." target="_blank">
+                        <Image src={wa} alt="" className='bx bxl_whatsapp' />
+                      </a>
+                    </div>
                   </div>
                   <div onClick={() => setNav(!nav)} className={"mobile_btn"}>
                     {nav ? <AiOutlineClose size={35} /> : <AiOutlineMenu size={35} />}
