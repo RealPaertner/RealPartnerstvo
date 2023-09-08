@@ -348,11 +348,11 @@ li {
     padding-top: 10px;
     transition: left 1s;
     @media (max-width: 400px) {
-      top: 70px;
+      // top: 70px;
       flex-direction: column;
-      .telHeader {
-        line-height: 0;
-      }
+      // .telHeader {
+      //   line-height: 0;
+      // }
     }
   }
   
